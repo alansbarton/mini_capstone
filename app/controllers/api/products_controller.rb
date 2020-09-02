@@ -4,7 +4,7 @@ class Api::ProductsController < ApplicationController
     render "all_product.json.jb"
   end
 
-  def idividual_product
+  def individual_product_action
     @idividual_product = Product.first
     render "individual_product.json.jb"
   end
