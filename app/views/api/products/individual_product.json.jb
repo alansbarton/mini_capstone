@@ -1,6 +1,0 @@
-{
-  name: @idividual_product.name,
-  price: @idividual_product.price,
-  image_url: @idividual_product.image_url,
-  description: @idividual_product.description,
-}
