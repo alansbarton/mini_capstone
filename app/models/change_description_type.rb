@@ -1,0 +1,2 @@
+class ChangeDescriptionType < ApplicationRecord
+end
