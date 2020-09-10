@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
   validates :name, presence: true
-  validates :price, numericality: { greater_than: true }
+  validates :price, numericality: { greater_than: 0 }
   validates :description, length: { in: 2..500 }
 
   def friendly_updated_at
