@@ -1,12 +1,12 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Supplier.create!({ name: "Suthern Wine & Spirits", email: "wineandspirits@email.com", phone_number: "562-926-2000" })
+Supplier.create!({ name: "Empire Merchants North LLC", email: "empire@email.com", phone_number: "555-666-7079" })
 
-product = Product.new({ name: "Captain Morgan", price: 30, image_url: "captainmorgan.com", description: "spiced rum" })
-product.save
-product = Product.new({ name: "Tacante", price: 3, image_url: "tacante.com", description: "beer" })
-product.save
+Product.create!({ name: "Captain Morgan", price: 30, description: "spiced rum", invientory: 100, supplier_id: 1 })
+Product.create!({ name: "Tacante", price: 3, description: "beer", invientory: 100, supplier_id: 1 })
+Product.create!({ name: "Scaia", price: 12, description: "red wine", invientory: 100, supplier_id: 2 })
+Product.create!({ name: "Titos", price: 25, description: "vodka", invientory: 100, supplier_id: 2 })
+
+Image.create!({ url: "https://static.vinepair.com/wp-content/uploads/2018/11/ntktecate_social.jpg", product_id: 1 })
+Image.create!({ url: "https://products2.imgix.drizly.com/ci-tecate-michelada-diablo-f90da770471f9e7f.jpeg?auto=format%2Ccompress&fm=jpg&q=20", product_id: 2 })
+Image.create!({ url: "https://products2.imgix.drizly.com/ci-tecate-michelada-diablo-f90da770471f9e7f.jpeg?auto=format%2Ccompress&fm=jpg&q=20", product_id: 3 })
+Image.create!({ url: "https://products2.imgix.drizly.com/ci-tecate-michelada-diablo-f90da770471f9e7f.jpeg?auto=format%2Ccompress&fm=jpg&q=20", product_id: 4 })

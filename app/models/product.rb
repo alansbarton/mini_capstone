@@ -7,6 +7,9 @@ class Product < ApplicationRecord
     updated_at.strftime("%b %d, %Y; %l:%M")
   end
 
+  belongs_to :supplier
+  has_many :images
+
   def is_discounted?
     price <= 10
   end
