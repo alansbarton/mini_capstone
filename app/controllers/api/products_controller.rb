@@ -2,6 +2,8 @@ class Api::ProductsController < ApplicationController
   def index
     @products = Product.all
 
+    p current_user
+
     if params[:search]
       @products = @products.where("name ILIKE ?", "%#{params[:search]}%")
     end
