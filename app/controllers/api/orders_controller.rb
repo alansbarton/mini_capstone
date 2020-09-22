@@ -16,14 +16,14 @@ class Api::OrdersController < ApplicationController
       total: total,
     )
 
-    Order.new(
-      user_id: current_user["id"],
-      product_id: params[:product_id],
-      quantity: params[:quantity],
-      subtotal: subtotal,
-      tax: tax,
-      total: total,
-    )
+    # Order.new(
+    #   user_id: current_user["id"],
+    #   product_id: params[:product_id],
+    #   quantity: params[:quantity],
+    #   subtotal: subtotal,
+    #   tax: tax,
+    #   total: total,
+    # )
 
     if @order.save
       render "show.json.jb"
