@@ -4,8 +4,7 @@
     user_id: carted_product.user_id,
     product: carted_product.product,
     quantity: carted_product.quantity,
-  # subtotal: carted_product.order.subtotal,
-  # tax: carted_product.order.tax,
-  # total: carted_product.order.total,
+    order_id: carted_product.order_id,
+    status: carted_product.status,
   }
 end

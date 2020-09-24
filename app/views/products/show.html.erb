@@ -1,0 +1,7 @@
+<h1>Product info</h1>
+    <h2>name: <%= @product.name%></h2>
+    <h4>price: <%= @product.price%></h4>
+    <img src="<%= @product.images[1] %>" alt="">
+    <p>description: <%= @product.description%></p>
+    <p>is_discounted?: <%= @product.is_discounted?%></p>
+    <a href="/products">All Products<a>
